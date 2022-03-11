@@ -2,7 +2,7 @@ import {
   assert,
   assertEquals,
   assertThrows,
-} from "https://deno.land/std@0.128.0/testing/asserts.ts";
+} from "https://deno.land/std@0.129.0/testing/asserts.ts";
 import randomItem, { randomMultipleItems } from "./mod.ts";
 
 const letters = ["a", "b", "c", "d", "e"];
