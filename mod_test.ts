@@ -1,23 +1,31 @@
 import {
   assert,
-  assertEquals,
   assertThrows,
 } from "https://deno.land/std@0.130.0/testing/asserts.ts";
-import randomItem, { randomMultipleItems } from "./mod.ts";
+import stableFunction from "https://deno.land/x/stable_fn@v0.0.1/mod.js";
+import { randomItem, randomMultipleItems } from "./mod.ts";
 
-const letters = ["a", "b", "c", "d", "e"];
+const fixture = ["a", "b", "c", "d", "e"];
 
-Deno.test("randomItem", () => {
-  assert(letters.includes(randomItem(letters)));
+Deno.test("[randomItem] Is not an stable function.", () => {
+  assert(!stableFunction(() => randomItem(fixture)));
 });
 
-Deno.test("randomMultipleItems", () => {
-  const result = randomMultipleItems(letters, 4);
-
-  assertEquals(result.length, 4);
-  assert(result.every((value) => letters.includes(value)));
+Deno.test("[randomItem] Argument validation", async (t) => {
+  await t.step("Incorrect Input", () => {
+    // @ts-ignore: It should throw.
+    assertThrows(() => randomItem("hey"));
+    // @ts-ignore: It should throw.
+    assertThrows(() => randomItem(456));
+  });
 });
 
-Deno.test("randomMultipleItems arguments validation", () => {
-  assertThrows(() => randomMultipleItems(letters, -3));
+Deno.test("[randomMultipleItems] Is not an stable function.", () => {
+  assert(!stableFunction(() => randomMultipleItems(fixture, 3)));
+});
+
+Deno.test("[randomMultipleItems] Argument validation", async (t) => {
+  await t.step("Negative Number", () => {
+    assertThrows(() => randomMultipleItems(fixture, -1));
+  });
 });

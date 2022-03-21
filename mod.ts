@@ -1,11 +1,36 @@
-export default function randomItem<T>(array: T[]): T {
-  return array[Math.floor(Math.random() * array.length)];
-}
+import { randomNumber } from "https://deno.land/x/random_number@0.1.1/mod.ts";
 
-export function randomMultipleItems<T>(array: T[], count: number): T[] {
-  if (count <= 0) {
-    throw new RangeError(`Got ${count}, expected a non-negative integer.`);
+/**
+ *	Get a random item from an array.
+ *
+ *	@example
+ *	```javascript
+ *	import { randomItem } from "https://deno.land/x/random_item/mod.ts";
+ *	randomItem(['🐴', '🦄', '🌈']); //=> '🦄'
+ *	```
+ */
+export function randomItem<T>(array: T[]): T {
+  if (!Array.isArray(array)) {
+    throw new TypeError("Expected an array.");
   }
 
-  return [...Array.from({ length: count })].map(() => randomItem(array));
+  return array[randomNumber({ max: array.length })];
+}
+
+/**
+ *	Get multiple random items from an array.
+ *	This is the equivalent of calling `randomItem()` multiple times so the returned array may contain duplicates.
+ *
+ *	@example
+ *	```javascript
+ *	import { randomMultipleItems } from "https://deno.land/x/random_item/mod.ts";
+ *	randomMultipleItems(['🐴', '🦄', '🌈'], 2); /=> ['🌈', '🦄']
+ *	```
+ */
+export function randomMultipleItems<T>(array: T[], length: number): T[] {
+  if (!(Number.isInteger(length) && length >= 0)) {
+    throw new TypeError(`Got ${length}, expected a non-negative integer.`);
+  }
+
+  return Array.from({ length }).map(() => randomItem(array));
 }
