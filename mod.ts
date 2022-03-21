@@ -4,7 +4,7 @@
  * @example
  * ```javascript
  * import { randomItem } from "https://deno.land/x/random_item/mod.ts";
- * randomItem(['🐴', '🦄', '🌈']); //=> '🦄'
+ * randomItem(['a', 'b', 'c']); //=> 'c'
  * ```
  */
 export function randomItem<T>(array: T[]): T {
@@ -22,7 +22,7 @@ export function randomItem<T>(array: T[]): T {
  * @example
  * ```javascript
  * import { randomMultipleItems } from "https://deno.land/x/random_item/mod.ts";
- * randomMultipleItems(['🐴', '🦄', '🌈'], 2); /=> ['🌈', '🦄']
+ * randomMultipleItems(['a', 'b', 'c'], 2); /=> ['a', 'c']
  * ```
  */
 export function randomMultipleItems<T>(array: T[], length: number): T[] {
