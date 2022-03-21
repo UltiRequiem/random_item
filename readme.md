@@ -1,6 +1,6 @@
 # random_item
 
-[![CI](https://github.com/ultirequiem/random_item/workflows/ci/badge.svg)](https://github.com/ultirequiem/random_item)
+[![CI](https://github.com/UltiRequiem/random_item/actions/workflows/ci.yaml/badge.svg)](https://github.com/UltiRequiem/random_item/actions/workflows/ci.yaml)
 [![codecov](https://codecov.io/gh/ultirequiem/random_item/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/random_item)
 [![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/random_item/mod.ts)
 
