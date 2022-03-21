@@ -1,13 +1,13 @@
 import { randomNumber } from "https://deno.land/x/random_number@0.1.1/mod.ts";
 
 /**
- * 	Get a random item from an array.
+ *	Get a random item from an array.
  *
- * 	@example
- * 	```javascript
- * 	import { randomItem } from "https://deno.land/x/random_item/mod.ts";
- * 	randomItem(['🐴', '🦄', '🌈']); //=> '🦄'
- * 	```
+ *	@example
+ *	```javascript
+ *	import { randomItem } from "https://deno.land/x/random_item/mod.ts";
+ *	randomItem(['🐴', '🦄', '🌈']); //=> '🦄'
+ *	```
  */
 export function randomItem<T>(array: T[]): T {
   if (!Array.isArray(array)) {
@@ -18,14 +18,14 @@ export function randomItem<T>(array: T[]): T {
 }
 
 /**
- * 	Get multiple random items from an array.
- * 	This is the equivalent of calling `randomItem()` multiple times so the returned array may contain duplicates.
+ *	Get multiple random items from an array.
+ *	This is the equivalent of calling `randomItem()` multiple times so the returned array may contain duplicates.
  *
- * 	@example
- * 	```javascript
- * 	import { randomMultipleItems } from "https://deno.land/x/random_item/mod.ts";
- * 	randomMultipleItems(['🐴', '🦄', '🌈'], 2); /=> ['🌈', '🦄']
- * 	```
+ *	@example
+ *	```javascript
+ *	import { randomMultipleItems } from "https://deno.land/x/random_item/mod.ts";
+ *	randomMultipleItems(['🐴', '🦄', '🌈'], 2); /=> ['🌈', '🦄']
+ *	```
  */
 export function randomMultipleItems<T>(array: T[], length: number): T[] {
   if (!(Number.isInteger(length) && length >= 0)) {
