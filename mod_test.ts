@@ -52,29 +52,36 @@ Deno.test("[randomMultipleItems] Argument validation", async (t) => {
       // @ts-ignore: It should throw.
       () => randomMultipleItems("hey", 34),
       TypeError,
-      "Expected an array.",
+      "Expected an array."
     );
 
     assertThrows(
       // @ts-ignore: It should throw.
       () => randomMultipleItems(34, 456),
       TypeError,
-      "Expected an array.",
+      "Expected an array."
     );
 
     assertThrows(
       // @ts-ignore: It should throw.
       () => randomMultipleItems(Error, 4),
       TypeError,
-      "Expected an array.",
+      "Expected an array."
     );
   });
 
   await t.step("Length", () => {
     assertThrows(
+      // @ts-ignore: It should throw.
+      () => randomMultipleItems("34", -1),
+      TypeError,
+      "Expected a number."
+    );
+
+    assertThrows(
       () => randomMultipleItems(fixture, -1),
       RangeError,
-      "Expected a positive number.",
+      "Expected a positive number."
     );
   });
 });
