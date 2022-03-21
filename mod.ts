@@ -1,5 +1,3 @@
-import { randomNumber } from "https://deno.land/x/random_number@0.1.1/mod.ts";
-
 /**
  * Get a random item from an array.
  *
@@ -14,7 +12,7 @@ export function randomItem<T>(array: T[]): T {
     throw new TypeError("Expected an array.");
   }
 
-  return array[randomNumber({ max: array.length })];
+  return array[Math.floor(Math.random() * array.length)];
 }
 
 /**
@@ -28,8 +26,12 @@ export function randomItem<T>(array: T[]): T {
  * ```
  */
 export function randomMultipleItems<T>(array: T[], length: number): T[] {
-  if (!(Number.isInteger(length) && length >= 0)) {
-    throw new TypeError(`Got ${length}, expected a non-negative integer.`);
+  if (!Number.isInteger(length)) {
+    throw new TypeError(`Expected an number.`);
+  }
+
+  if (!(length >= 0)) {
+    throw new RangeError(`Expected a positive number.`);
   }
 
   return Array.from({ length }).map(() => randomItem(array));
