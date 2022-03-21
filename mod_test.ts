@@ -73,7 +73,7 @@ Deno.test("[randomMultipleItems] Argument validation", async (t) => {
   await t.step("Length", () => {
     assertThrows(
       // @ts-ignore: It should throw.
-      () => randomMultipleItems("34", -1),
+      () => randomMultipleItems("34", "hey"),
       TypeError,
       "Expected a number.",
     );

@@ -27,7 +27,7 @@ export function randomItem<T>(array: T[]): T {
  */
 export function randomMultipleItems<T>(array: T[], length: number): T[] {
   if (!Number.isInteger(length)) {
-    throw new TypeError(`Expected an number.`);
+    throw new TypeError(`Expected a number.`);
   }
 
   if (!(length >= 0)) {
