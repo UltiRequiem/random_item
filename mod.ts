@@ -34,5 +34,5 @@ export function randomMultipleItems<T>(array: T[], length: number): T[] {
     throw new RangeError(`Expected a positive number.`);
   }
 
-  return Array.from({ length }).map(() => randomItem(array));
+  return Array.from({ length }, () => randomItem(array));
 }
