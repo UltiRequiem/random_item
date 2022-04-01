@@ -4,10 +4,6 @@
 [![codecov](https://codecov.io/gh/ultirequiem/random_item/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/random_item)
 [![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/random_item/mod.ts)
 
-![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fdeno-visualizer.danopia.net%2Fshields%2Fdep-count%2Fx%2Frandom_item%2Fmod.ts)
-![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fdeno-visualizer.danopia.net%2Fshields%2Fupdates%2Fx%2Frandom_item%2Fmod.ts)
-[![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fdeno-visualizer.danopia.net%2Fshields%2Flatest-version%2Fx%2Frandom_item%2Fmod.ts)](https://deno.land/x/random_item)
-
 Get a random item from an array
 
 ## Usage
