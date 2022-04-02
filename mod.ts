@@ -12,7 +12,7 @@ export function randomItem<T>(array: readonly T[]): T {
     throw new TypeError("Expected an array.");
   }
 
-  return (array as const)[Math.floor(Math.random() * array.length)];
+  return array[Math.floor(Math.random() * array.length)];
 }
 
 /**
