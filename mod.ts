@@ -7,12 +7,12 @@
  * randomItem(['a', 'b', 'c']); //=> 'c'
  * ```
  */
-export function randomItem<T>(array: T[]): T {
+export function randomItem<T>(array: readonly T[]): T {
   if (!Array.isArray(array)) {
     throw new TypeError("Expected an array.");
   }
 
-  return array[Math.floor(Math.random() * array.length)];
+  return (array as const)[Math.floor(Math.random() * array.length)];
 }
 
 /**
@@ -25,7 +25,10 @@ export function randomItem<T>(array: T[]): T {
  * randomMultipleItems(['a', 'b', 'c'], 2); /=> ['a', 'c']
  * ```
  */
-export function randomMultipleItems<T>(array: T[], length: number): T[] {
+export function randomMultipleItems<T>(
+  array: readonly T[],
+  length: number,
+): T[] {
   if (!Number.isInteger(length)) {
     throw new TypeError(`Expected a number.`);
   }

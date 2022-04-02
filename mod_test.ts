@@ -3,11 +3,11 @@ import {
   assertEquals,
   assertThrows,
 } from "https://deno.land/std@0.133.0/testing/asserts.ts";
-import stableFunction from "https://deno.land/x/stable_fn@v1.0.0/mod.js";
+import { stableFunction } from "https://deno.land/x/stable_fn@v1.0.0/mod.ts";
 
 import { randomItem, randomMultipleItems } from "./mod.ts";
 
-const fixture = ["a", "b", "c", "d", "e"];
+const fixture = ["a", "b", "c", "d", "e"] as const;
 
 Deno.test("[randomItem] Is not an stable function.", () => {
   assert(!stableFunction(() => randomItem(fixture)));
