@@ -30,22 +30,14 @@ import { randomTimeZone, timeZone } from "@ultirequiem/random-item";
 
 ### Browser
 
-Using
-[type module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
-🍱
+You can use any [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) 🔥
 
-- [esm.sh](https://esm.sh/@ultirequiem/random-item)
+Eg. [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+▶ [SkyPack](https://cdn.skypack.dev/@ultirequiem/random-item) _/_
+[script tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) ▶
+[JSDelivr](https://cdn.jsdelivr.net/npm/@ultirequiem/random-item).
 
-- [skypack](https://cdn.skypack.dev/@ultirequiem/random-item)
-
-Using a plain
-[script tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) 👇
-
-- [jsdelivr](https://cdn.jsdelivr.net/npm/@ultirequiem/random-item)
-
-- [unpkg](https://unpkg.com/@ultirequiem/random-item)
-
-You have the same API on all of this platforms.
+_The API is the same on all this platforms._
 
 ## Documentation
 
