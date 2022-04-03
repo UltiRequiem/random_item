@@ -58,7 +58,7 @@ Don't forget to start the repo ⭐
 
 ## Versioning
 
-We use [SemVer](http://semver.org) for versioning. For the versions available,
+We use [Semantic Versioning](http://semver.org). For the versions available,
 see the [tags](https://github.com/UltiRequiem/random_item/tags) 🏷️
 
 ## Authors
