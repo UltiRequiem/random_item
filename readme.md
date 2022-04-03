@@ -15,17 +15,15 @@ import {
   randomMultipleItems,
 } from "https://deno.land/x/random_item/mod.ts";
 
-randomItem(["🐴", "🦄", "🌈"]);
-//=> '🦄'
+randomItem(["🐴", "🦄", "🌈"]); //=> '🦄'
 
-randomMultipleItems(["🐴", "🦄", "🌈"], 2);
-//=> ['🌈', '🦄']
+randomMultipleItems(["🐴", "🦄", "🌈"], 2); //=> ['🌈', '🦄']
 ```
 
 ### [Node.js 🐢](https://www.npmjs.com/package/@ultirequiem/random-item)
 
 ```ts
-import { randomTimeZone, timeZone } from "@ultirequiem/random-item";
+import { randomItem, randomMultipleItems } from "@ultirequiem/random-item";
 ```
 
 ### Browser
