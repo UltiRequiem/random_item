@@ -27,9 +27,6 @@ jobs:
         if: matrix.os == 'ubuntu-latest'
         run: deno lint
 
-      - name: Bundle
-        run: deno bundle mod.ts mod.bundle.js
-
       - name: Tests
         run: deno test --coverage=./cov
 
