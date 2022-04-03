@@ -80,7 +80,7 @@ Deno.test("[randomMultipleItems] Argument validation", async (t) => {
 
     assertThrows(
       () => randomMultipleItems(fixture, -1),
-      RangeError,
+      TypeError,
       "Expected a positive number.",
     );
   });
