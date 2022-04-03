@@ -37,8 +37,8 @@ You can use any [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) �
 Eg 👉
 [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) ↔️
 [SkyPack](https://cdn.skypack.dev/@ultirequiem/random-item) 🆚
-[Script](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) ↔️
-[JSDelivr](https://cdn.jsdelivr.net/npm/@ultirequiem/random-item).
+[Script Tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
+↔️ [JSDelivr](https://cdn.jsdelivr.net/npm/@ultirequiem/random-item)
 
 ## Documentation
 
@@ -53,7 +53,7 @@ If you want to hurry me up a bit
 [send me a tweet](https://twitter.com/UltiRequiem) 😆
 
 Consider [supporting me on Patreon](https://patreon.com/UltiRequiem) if you like
-my work 🚀
+my work 🙏
 
 Don't forget to start the repo ⭐
 
