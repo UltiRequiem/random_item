@@ -52,21 +52,21 @@ Deno.test("[randomMultipleItems] Argument validation", async (t) => {
       // @ts-ignore: It should throw.
       () => randomMultipleItems("hey", 34),
       TypeError,
-      "Expected an array.",
+      "Expected an array."
     );
 
     assertThrows(
       // @ts-ignore: It should throw.
       () => randomMultipleItems(34, 456),
       TypeError,
-      "Expected an array.",
+      "Expected an array."
     );
 
     assertThrows(
       // @ts-ignore: It should throw.
       () => randomMultipleItems(Error, 4),
       TypeError,
-      "Expected an array.",
+      "Expected an array."
     );
   });
 
@@ -75,13 +75,25 @@ Deno.test("[randomMultipleItems] Argument validation", async (t) => {
       // @ts-ignore: It should throw.
       () => randomMultipleItems("34", "hey"),
       TypeError,
-      "Expected a number.",
+      "Expected a number."
     );
 
     assertThrows(
       () => randomMultipleItems(fixture, -1),
       RangeError,
-      "Expected a positive number.",
+      "Expected a positive number."
     );
   });
+});
+
+Deno.test("[randomItem] Support iterables.", () => {
+  assert(!stableFunction(() => randomItem([...new Set(fixture)])));
+
+  for (let i = 0; i < 100; i++) {
+    const item = randomItem(fixture);
+
+    assertEquals(typeof item, "string");
+
+    assert(fixture.includes(item));
+  }
 });
