@@ -69,7 +69,7 @@ random_item --help
 
 [A binary for multiple platforms is provided too!](https://github.com/UltiRequiem/random-item/releases/latest)
 
-[Video Showcase](https://youtu.be/LnQduW2ongY()
+[Video Showcase](https://youtu.be/LnQduW2ongY)
 
 ## Support
 
