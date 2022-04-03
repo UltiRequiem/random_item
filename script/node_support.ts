@@ -17,5 +17,5 @@ buildPackage(
       "./mod.ts",
       { name: "random_item", path: "./random_item.ts", kind: "bin" },
     ],
-  }
+  },
 );
