@@ -51,7 +51,9 @@ Is hosted on
 
 - **Deno 🎃**
 
-`deno install https://deno.land/x/random_item/random_item.ts`
+```sh
+deno install https://deno.land/x/random_item/random_item.ts
+```
 
 - **Node.js 🐼**
 
