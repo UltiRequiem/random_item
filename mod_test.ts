@@ -75,7 +75,7 @@ Deno.test("[randomMultipleItems] Argument validation", async (t) => {
       // @ts-ignore: It should throw.
       () => randomMultipleItems("34", "hey"),
       TypeError,
-      "Expected a number.",
+      "Expected a positive number.",
     );
 
     assertThrows(

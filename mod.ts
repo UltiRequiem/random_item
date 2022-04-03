@@ -29,7 +29,7 @@ export function randomMultipleItems<T>(
   length: number,
 ): T[] {
   if (!(Number.isInteger(length) && length >= 0)) {
-    throw new TypeError("Expected a positive integer.");
+    throw new TypeError("Expected a positive number.");
   }
 
   return Array.from({ length }, () => randomItem(array));
