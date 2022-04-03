@@ -68,7 +68,7 @@ Maintainer 💪
 
 See also the full list of
 [contributors](https://github.com/UltiRequiem/random_item/contributors) who
-participated in this project.
+participated in this project ✨
 
 ## Licence
 
