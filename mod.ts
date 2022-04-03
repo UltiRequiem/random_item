@@ -26,7 +26,7 @@ export function randomItem<T>(array: readonly T[]): T {
  */
 export function randomMultipleItems<T>(
   array: readonly T[],
-  length: number
+  length: number,
 ): T[] {
   if (!(Number.isInteger(length) && length >= 0)) {
     throw new TypeError("Expected a positive integer.");
