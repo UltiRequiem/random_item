@@ -19,7 +19,7 @@ randomItem(["🐴", "🦄", "🌈"]); //=> '🦄'
 
 randomMultipleItems(["🐴", "🦄", "🌈"], 2); //=> ['🌈', '🦄']
 
-randomItem([...new Set(1, 2, 3)]); //=> 2
+randomItem([...new Set(["🐴", "🦄", "🌈"])]); //=> '🌈'
 ```
 
 ### [Node.js 🦖](https://npmjs.com/package/@ultirequiem/random-item)
