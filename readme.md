@@ -37,12 +37,12 @@ Eg. [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 [script tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) ▶
 [JSDelivr](https://cdn.jsdelivr.net/npm/@ultirequiem/random-item).
 
-_The API is the same on all this platforms._
+_The API is the same on all this platforms ✔️_
 
 ## Documentation
 
 Is hosted on
-[Deno Doc](https://doc.deno.land/https://deno.land/x/random_item/mod.ts) 📄
+[Deno Doc](https://doc.deno.land/https://deno.land/x/random_item/mod.ts) 📚
 
 ## Support
 
@@ -58,8 +58,8 @@ Don't forget to start the repo ⭐
 
 ## Versioning
 
-We use [Semantic Versioning](http://semver.org). For the versions available,
-see the [tags](https://github.com/UltiRequiem/random_item/tags) 🏷️
+We use [Semantic Versioning](http://semver.org). For the versions available, see
+the [tags](https://github.com/UltiRequiem/random_item/tags) 🏷️
 
 ## Authors
 
@@ -72,4 +72,4 @@ participated in this project ✨
 
 ## Licence
 
-Licensed under the MIT License.
+Licensed under the MIT License 📄
