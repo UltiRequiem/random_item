@@ -42,7 +42,7 @@ _The API is the same on all this platforms._
 ## Documentation
 
 Is hosted on
-[Deno Doc](https://doc.deno.land/https://deno.land/x/random_item/mod.ts) 🦖
+[Deno Doc](https://doc.deno.land/https://deno.land/x/random_item/mod.ts) 📄
 
 ## Support
 
