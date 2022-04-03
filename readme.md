@@ -45,6 +45,30 @@ Eg 👉
 Is hosted on
 [Deno Doc](https://doc.deno.land/https://deno.land/x/random_item/mod.ts) 📚
 
+## CLI
+
+### Install
+
+- **Deno 🎃**
+
+`deno install https://deno.land/x/random_item/random_item.ts`
+
+- **Node.js 🐼**
+
+```sh
+npm install -g @ultirequiem/random-item
+```
+
+### Usage
+
+```sh
+random_item --help
+```
+
+[A binary for multiple platforms is provided too!](https://github.com/UltiRequiem/random-item/releases/latest)
+
+[Video Showcase](https://youtu.be/LnQduW2ongY()
+
 ## Support
 
 Open an Issue, I will check it a soon as possible 👀
