@@ -2,7 +2,7 @@ import {
   assert,
   assertEquals,
   assertThrows,
-} from "https://deno.land/std@0.161.0/testing/asserts.ts";
+} from "https://deno.land/std@0.166.0/testing/asserts.ts";
 import { stableFunction } from "https://deno.land/x/stable_fn@v1.0.0/mod.ts";
 
 import { randomItem, randomMultipleItems } from "./mod.ts";
