@@ -1,3 +1,5 @@
+import { randomNumber } from "https://deno.land/x/random_number/mod.ts";
+
 /**
  * Get a random item from an array.
  *
@@ -11,7 +13,7 @@ export function randomItem<T>(array: readonly T[]): T {
     throw new TypeError("Expected an array.");
   }
 
-  return array[Math.floor(Math.random() * array.length)];
+  return array[randomNumber({ min: 0, max: array.length - 1 })];
 }
 
 /**
