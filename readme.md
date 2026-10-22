@@ -1,6 +1,6 @@
 # random_item
 
-Get a random item from an array
+Get a random item, or several, from an array.
 
 [![npm](https://img.shields.io/npm/v/@ultirequiem/random-item?logo=npm&color=cb3837)](https://www.npmjs.com/package/@ultirequiem/random-item)
 [![npm downloads](https://img.shields.io/npm/dm/@ultirequiem/random-item?color=cb3837)](https://www.npmjs.com/package/@ultirequiem/random-item)
