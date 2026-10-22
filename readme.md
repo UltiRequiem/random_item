@@ -1,7 +1,6 @@
 # random_item
 
 [![codecov](https://codecov.io/gh/ultirequiem/random_item/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/random_item)
-[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/random_item/mod.ts)
 
 Get a random item from an array
 
@@ -9,25 +8,19 @@ Get a random item from an array
 
 The API is the same on all this platforms ✔️
 
-### [Deno 🦕](https://deno.land/x/random_item)
+### [Node.js 🐢🚀](https://npmjs.com/package/random-item)
 
 ```typescript
 import {
   randomItem,
   randomMultipleItems,
-} from "https://deno.land/x/random_item/mod.ts";
+} from "random-item";
 
 randomItem(["🐴", "🦄", "🌈"]); //=> '🦄'
 
 randomMultipleItems(["🐴", "🦄", "🌈"], 2); //=> ['🌈', '🦄']
 
 randomItem([...new Set(["🐴", "🦄", "🌈"])]); //=> '🌈'
-```
-
-### [Node.js 🦖](https://npmjs.com/package/@ultirequiem/random-item)
-
-```ts
-import { randomItem, randomMultipleItems } from "@ultirequiem/random-item";
 ```
 
 ### [Browser 🌐](https://developer.mozilla.org/en-US/docs/Glossary/Browser)
@@ -77,9 +70,6 @@ Open an Issue, I will check it a soon as possible 👀
 
 If you want to hurry me up a bit
 [send me a tweet](https://twitter.com/UltiRequiem) 😆
-
-Consider [supporting me on Patreon](https://patreon.com/UltiRequiem) if you like
-my work 🙏
 
 Don't forget to star the repo ⭐
 
