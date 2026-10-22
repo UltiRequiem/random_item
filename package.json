@@ -1,7 +1,7 @@
 {
   "name": "@ultirequiem/random-item",
   "version": "0.0.0-development",
-  "description": "",
+  "description": "Get a random item, or several, from an array.",
   "type": "module",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -17,7 +17,13 @@
   "engines": {
     "node": ">=20"
   },
-  "keywords": [],
+  "keywords": [
+    "random",
+    "array",
+    "pick",
+    "esm",
+    "typescript"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
