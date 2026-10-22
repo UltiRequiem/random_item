@@ -1,4 +1,4 @@
-import { randomNumber } from "https://deno.land/x/random_number/mod.ts";
+import { randomNumber } from "@ultirequiem/random-number";
 
 /**
  * Get a random item from an array.
