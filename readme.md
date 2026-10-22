@@ -1,11 +1,11 @@
 # random_item
 
+Get a random item from an array
+
 [![npm](https://img.shields.io/npm/v/@ultirequiem/random-item?logo=npm&color=cb3837)](https://www.npmjs.com/package/@ultirequiem/random-item)
 [![npm downloads](https://img.shields.io/npm/dm/@ultirequiem/random-item?color=cb3837)](https://www.npmjs.com/package/@ultirequiem/random-item)
 [![CI](https://github.com/UltiRequiem/random_item/actions/workflows/ci.yaml/badge.svg)](https://github.com/UltiRequiem/random_item/actions/workflows/ci.yaml)
 [![codecov](https://codecov.io/gh/UltiRequiem/random_item/graph/badge.svg)](https://codecov.io/gh/UltiRequiem/random_item)
-
-Get a random item from an array
 
 ## Usage
 
