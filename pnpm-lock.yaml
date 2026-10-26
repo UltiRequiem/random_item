@@ -170,8 +170,8 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1
       '@ultirequiem/stable-fn':
-        specifier: ^1.0.2
-        version: 1.0.2
+        specifier: ^2.0.1
+        version: 2.0.1
     devDependencies:
       '@types/node':
         specifier: ^26.6.5
@@ -537,6 +537,10 @@ packages:
 
   '@ultirequiem/stable-fn@1.0.2':
     resolution: {integrity: sha512-yF6TejbgMutlL1FczJo2VrE79N5nuSdyT384zdutf76IeNMAXE0tfQzhONe1fFRnvnq+qZSNYlYB+b6SvH8tNw==}
+
+  '@ultirequiem/stable-fn@2.0.1':
+    resolution: {integrity: sha512-DE1ghrfcH/M64FVXMto2FxjljBp4u97xYXwRiSpSsiF/5lFgnTf/rZvEwUtTBCh1lt3HC6yj1UsVQxxrm0oQCQ==}
+    engines: {node: '>=20'}
 
   '@vitest/coverage-v8@5.0.5':
     resolution: {integrity: sha512-4KpkGdIrSqBihx/JyP/e+S+IKB98etg1XDQiLAxksLfcShnwi1VReGeOT9NI43hLHbknosKp/1CCLn9Zgcs8mg==}
@@ -1660,6 +1664,10 @@ snapshots:
   '@ultirequiem/random-number@3.0.1': {}
 
   '@ultirequiem/stable-fn@1.0.2': {}
+
+  '@ultirequiem/stable-fn@2.0.1':
+    dependencies:
+      '@ultirequiem/stable-fn': 1.0.2
 
   '@vitest/coverage-v8@5.0.5(vitest@5.0.5)':
     dependencies:

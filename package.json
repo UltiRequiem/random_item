@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "@ultirequiem/random-number": "^3.0.1",
-    "@ultirequiem/stable-fn": "^1.0.2"
+    "@ultirequiem/stable-fn": "^2.0.1"
   },
   "packageManager": "pnpm@12.6.0"
 }
